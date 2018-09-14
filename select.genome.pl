@@ -5,8 +5,8 @@ while(<IN>){
     chomp;
     next if(/^#/);
     my @arr = split(/\t/);
-    $hash{$arr[6]}{$arr[4]}=$_;
-    $hash{$arr[6]}{$arr[11]}=$_;
+    $hash{$arr[5]}{$arr[4]}=$_;
+    $hash{$arr[5]}{$arr[11]}=$_;
 }
 
 foreach my $key(keys %hash){
